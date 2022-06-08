@@ -1,0 +1,557 @@
+body {
+   font-family: "Helvetica", sans-serif;
+   font-size: 20px;
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+h1 {
+   font-size: 2.5em;
+}
+
+h2 {
+   font-size: 2.0em;
+}
+
+h3 {
+   font-size: 1.15em;
+}
+
+/* Links in navbar */
+nav a {
+   color: #1f1f1f;
+   text-transform: uppercase;
+   text-decoration: none;
+   display: inline-block;
+}
+
+nav a::after {
+   content: "";
+   width: 0px;
+   height: 2px;
+   display: block;
+   background: #0e2e8b;
+   transition: 300ms;
+}
+
+nav a:hover::after {
+   width: 100%;
+}
+
+/* Home Page classes*/
+.covertxt {
+   color: #f7f7ff;
+   font-size: 1.3rem;
+   margin-bottom: 30px;
+}
+
+#covertxt2 {
+   color: #f7f7ff;
+   font-size: 3.5rem;
+   font-family: "American Typewriter", cursive;
+}
+
+.cover {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 31vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/taps.jpg");
+   background-repeat: repeat-y;
+   background-size: cover;
+   margin: 0px;
+}
+
+.intro-text {
+   padding: 20px;
+}
+
+.intro-contain {
+   padding: 8px;
+   align-content: space-around;
+}
+
+.intro-entry {
+   margin: 10px;
+   background-color: #83c9c8;
+   padding-bottom: 1.7rem;
+   width: 350px;
+}
+
+.intro-imag-contain {
+   display: flex;
+   align-items: center;
+   border: 1px solid #f7f7ff;
+   max-height: 300px;
+   width: 100%;
+   overflow: hidden;
+}
+
+/* Drink classes */
+.diff-drinks {
+   padding: 10px;
+}
+
+.diff-drinks>a {
+   text-decoration: none;
+}
+
+.sample-drink {
+   margin: 20px;
+}
+
+.sample-drink>h3 {
+   padding: 5px;
+   text-transform: uppercase;
+}
+
+.drink-pic {
+   width: 540px;
+   max-height: 540px;
+   overflow: hidden;
+   position: relative;
+}
+
+.drink-pic>div {
+   transform: translate(-50%, -50%);
+   z-index: 3;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transition: all 0.5s ease;
+}
+
+.drink-pic h2 {
+   margin: 0;
+   color: #f7f7ff;
+}
+
+.columns {
+   float: right;
+   position: relative;
+   margin-right: 600px;
+}
+
+.drink-pic:hover>div {
+   opacity: 1;
+}
+
+.drink-pic:hover img {
+   filter: brightness(80%) blur(2px);
+}
+
+.drink-pic2 {
+   width: 540px;
+   max-height: 540px;
+   overflow: hidden;
+   position: relative;
+}
+
+/* Info */
+.logo-container2 {
+   justify-content: center;
+   width: 100%;
+   height: auto;
+
+}
+
+.diff-staff {
+   padding: 50px;
+}
+
+.diff-staff>a {
+   text-decoration: none;
+}
+
+.sample-staff {
+   margin: 10px;
+}
+
+.sample-staff>h3 {
+   padding: 5px;
+   text-transform: uppercase;
+}
+
+.staff-pic {
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   position: relative;
+}
+
+.staff-pic>div {
+   transform: translate(-50%, -50%);
+   z-index: 3;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transition: all 0.5s ease;
+}
+
+.staff-pic h2 {
+   margin: 0;
+   color: #f7f7ff;
+}
+
+.columns {
+   float: right;
+   position: relative;
+   margin-right: 600px;
+}
+
+.staff-pic:hover>div {
+   opacity: 1;
+}
+
+.staff-pic:hover img {
+   filter: brightness(80%) blur(2px);
+}
+
+/* Footer */
+footer {
+   padding: 10px;
+   margin-top: auto;
+}
+
+.logo-container {
+   justify-content: center;
+}
+
+
+.logo-entry {
+   width: 35px;
+   height: 35px;
+   margin: 20px;
+   display: flex;
+}
+
+.legal {
+   display: flex;
+   list-style-type: none;
+}
+
+.legal>li {
+   margin: 10px;
+}
+
+.legal a {
+   color: #000000;
+   text-decoration: none;
+}
+
+/* Header classes */
+nav {
+   width: 100%;
+   display: flex;
+   transition: all 1s;
+   text-align: center;
+}
+
+.nav-list {
+   display: flex;
+   justify-content: flex-end;
+   flex-grow: 2;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   align-items: center;
+}
+
+.nav-list>li {
+   padding: 17px;
+}
+
+.logo-container {
+   width: 100px;
+   transition: all 1s;
+}
+
+/* small nav bar */
+.small {
+   line-height: 50px;
+   box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.8);
+   position: fixed;
+   top: 0;
+   z-index: 2;
+}
+
+.small+.headfix {
+   padding-top: 190px;
+}
+
+nav.small {
+   transition: all 1s;
+}
+
+nav.small li {
+   transition: all 1s;
+   padding: 8px;
+}
+
+nav.small>div {
+   transition: all 1s;
+   width: 65px;
+}
+
+.navs>li {
+   padding: 0px 10px;
+   font-size: 0.65rem;
+}
+
+.logo {
+   width: 100px;
+   transition: all 2s;
+}
+
+.norm {
+   transition: all 2s;
+}
+
+/* Generic classes */
+.gen-title {
+   font-size: 2.5em;
+   font-family: "Helvetica", cursive;
+   padding: 30px;
+   text-align: center;
+}
+
+.gen-foot {
+   margin-right: auto;
+}
+
+.gen-fcontain {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.gen-gridContain {
+   display: grid;
+}
+
+.gen-img {
+   display: block;
+   width: 50%;
+   height: auto;
+}
+
+.gen-img2 {
+   display: block;
+   height: 15%;
+   width: 15%;
+}
+
+.gen-img3 {
+   display: block;
+   width: 150%;
+   height: auto;
+   align-items: center;
+}
+
+.rounded {
+   border-radius: 0.5rem;
+}
+
+.norm-trans {
+   transition: all 1s;
+}
+
+.gen-butt {
+   font-family: "Helvetica", sans-serif;
+   text-transform: uppercase;
+   width: 100%;
+   border: 0;
+   padding: 15px;
+   outline: 0;
+   background: #e1e1e8;
+   color: #1f1f1f;
+   font-size: 1.1em;
+   transition: all 0.3 ease;
+   cursor: pointer;
+}
+
+/* Colour classes */
+.orange {
+   color: #000000;
+   background-color: #eeddbc;
+}
+
+.lightblue{
+   color: #000000;
+   background-color: #C7E4EE;
+}
+
+.darkgreen {
+   color: #000000;
+   background-color: #047a16;
+}
+
+.lightgrey{
+   color: #000000;
+   background-color: #bebebe;
+}
+
+/* Barney's Events*/
+.button-dets {
+   font-family: "Helvetica", sans-serif;
+   text-transform: uppercase;
+   width: 100%;
+   border: 0;
+   padding: 15px;
+   outline: 0;
+   background: #e1e1e8;
+   color: #1f1f1f;
+   font-size: 1.1em;
+   transition: all 0.3 ease;
+   cursor: pointer;
+}
+
+.button {
+   width: 100%;
+   padding: 8px;
+   box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.8);
+   max-width: 200px;
+}
+
+
+/* Font classes */
+.norm-text {
+   text-align: center;
+   line-height: 1.6rem;
+   text-decoration: none;
+}
+
+
+.gen-caption {
+   font-size: 1.4em;
+   font-family: "Helvetica", sans-serif;
+   padding: 20px;
+   text-align: center;
+}
+
+.gen-cover {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 30vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: 0px;
+}
+
+@media only screen and (max-width: 820px) {
+   body {
+      font-size: 0.8rem;
+   }
+
+   .product-image-container {
+      width: 230px;
+      max-height: 300px;
+   }
+
+   .intro-entry {
+      width: 220px;
+   }
+
+   .location-container {
+      flex-direction: column;
+   }
+
+   table {
+      font-size: 0.8em;
+   }
+}
+
+/* for nav bar and hero */
+@media only screen and (max-width: 620px) {
+   body {
+      font-size: 0.7rem;
+   }
+
+   nav {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+   }
+
+   .bottom-nav-container {
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+
+   .copyright-text {
+      margin: auto;
+   }
+
+   #covertitle {
+      font-size: 3rem;
+   }
+
+   nav {
+      transition: none;
+   }
+
+   .navigation-links>li {
+      padding: 0px 10px;
+      font-size: 0.65rem;
+   }
+
+   .logo-container {
+      width: 160px;
+   }
+
+   .small+.header-fix {
+      padding-top: 190px;
+   }
+
+   nav.small {
+      height: auto;
+   }
+
+   nav.small li {
+      padding: 0px 10px;
+      font-size: 0.65rem;
+   }
+
+   nav.small>div {
+      display: none;
+   }
+
+   .menu-image-container {
+      max-width: 250px;
+   }
+
+   .field-container>button {
+      width: 190px;
+   }
+
+   table {
+      font-size: 0.7em;
+   }
+}
+
+@media only screen and (max-width: 420px) {
+   .navigation-links>li {
+      padding: 0px 5px;
+      font-size: 0.55rem;
+   }
+
+   nav.small li {
+      padding: 0px 5px;
+      font-size: 0.45rem;
+   }
+
+   table {
+      font-size: 0.48em;
+   }
+}
